@@ -2,7 +2,7 @@ clc;
 close all;
 clf;
 clear all;
-img_path = '.\slipper.jpg';
+img_path = '.\image\slipper.jpg';
 img = imread(img_path);
 img = rgb2gray(img);
 %img = imresize(img,0.5);
