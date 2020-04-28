@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 clc;
 clf;
 close all;
@@ -30,3 +31,16 @@ confusionmat(hand_mask(:),BW3(:))
 %imshowpair(img,BW,'montage');
 %figure;
 %imshow(uint8(BW).*img);
+=======
+clc;
+clf;
+clear all;
+img_path = '.\tower.jpg';
+img = imread(img_path);
+img = rgb2gray(img);
+%level = graythresh(img)
+BW = imbinarize(img,0.6);
+imshowpair(img,BW,'montage');
+%figure;
+%imshow(uint8(BW).*img);
+>>>>>>> 18619402270a206486e7d4637fff88e2d1e13d38
